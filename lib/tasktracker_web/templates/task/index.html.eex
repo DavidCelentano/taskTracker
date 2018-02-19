@@ -3,6 +3,8 @@
 <table class="table">
   <thead>
     <tr>
+      <th>Author</th>
+      <th>Asignee</th>
       <th>Title</th>
       <th>Body</th>
       <th>Completed</th>
@@ -14,6 +16,8 @@
   <tbody>
 <%= for task <- @tasks do %>
     <tr>
+      <td><%= task.author.name %></td>
+      <td><%= task.asignee.name %></td>
       <td><%= task.title %></td>
       <td><%= task.body %></td>
       <td><%= task.completed %></td>

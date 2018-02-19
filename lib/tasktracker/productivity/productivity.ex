@@ -19,6 +19,8 @@ defmodule Tasktracker.Productivity do
   """
   def list_tasks do
     Repo.all(Task)
+    |> Repo.preload(:author)
+    |> Repo.preload(:asignee)
   end
 
   @doc """
