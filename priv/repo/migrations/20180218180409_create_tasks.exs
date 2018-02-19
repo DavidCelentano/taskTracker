@@ -3,11 +3,11 @@ defmodule Tasktracker.Repo.Migrations.CreateTasks do
 
   def change do
     create table(:tasks) do
-      add :title, :string
-      add :body, :text
+      add :title, :string, null: false
+      add :body, :text, null: false
       add :completed, :boolean, default: false, null: false
       add :duration, :integer
-      add :author_id, references(:users, on_delete: :nothing)
+      add :author_id, references(:users, on_delete: :delete_all), null: false
       add :asignee_id, references(:users, on_delete: :nothing)
 
       timestamps()

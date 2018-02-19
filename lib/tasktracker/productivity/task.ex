@@ -18,7 +18,7 @@ defmodule Tasktracker.Productivity.Task do
   @doc false
   def changeset(%Task{} = task, attrs) do
     task
-    |> cast(attrs, [:title, :body, :completed, :duration])
-    |> validate_required([:title, :body, :completed, :duration])
+    |> cast(attrs, [:title, :body, :completed, :duration, :author_id, :asignee_id])
+    |> validate_required([:title, :body, :completed, :author_id])
   end
 end
