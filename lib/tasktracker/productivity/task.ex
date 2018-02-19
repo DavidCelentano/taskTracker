@@ -9,8 +9,8 @@ defmodule Tasktracker.Productivity.Task do
     field :completed, :boolean, default: false
     field :duration, :integer
     field :title, :string
-    field :author_id, :id
-    field :asignee_id, :id
+    belongs_to :author, Tasktracker.Accounts.User
+    belongs_to :asignee, Tasktracker.Accounts.User
 
     timestamps()
   end

@@ -35,7 +35,11 @@ defmodule Tasktracker.Productivity do
       ** (Ecto.NoResultsError)
 
   """
-  def get_task!(id), do: Repo.get!(Task, id)
+  def get_task!(id) do
+    Repo.get!(Task, id)
+    |> Repo.preload(:author)
+    |> Repo.preload(:asignee)
+  end
 
   @doc """
   Creates a task.

@@ -3,6 +3,16 @@
 <ul>
 
   <li>
+    <strong>Author:</strong>
+    <%= @task.author.name %>
+  </li>
+
+  <li>
+    <strong>Asignee:</strong>
+    <%= @task.asignee.name%>
+  </li>
+
+  <li>
     <strong>Title:</strong>
     <%= @task.title %>
   </li>
