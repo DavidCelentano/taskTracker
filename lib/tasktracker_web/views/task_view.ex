@@ -2,6 +2,6 @@ defmodule TasktrackerWeb.TaskView do
   use TasktrackerWeb, :view
 
   def title do
-    "test"
+    2
   end
 end
