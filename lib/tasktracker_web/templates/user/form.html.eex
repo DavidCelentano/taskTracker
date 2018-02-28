@@ -18,6 +18,13 @@
   </div>
 
   <div class="form-group">
+    <%= label f, :underlings, class: "control-label" %>
+    <%= text_input f, :underlings, class: "form-control" %>
+    <%= error_tag f, :underlings %>
+  </div>
+
+
+  <div class="form-group">
     <%= submit "Submit", class: "btn btn-primary" %>
   </div>
 <% end %>
