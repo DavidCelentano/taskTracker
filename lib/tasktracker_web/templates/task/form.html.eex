@@ -39,7 +39,7 @@
 
   <div class="form-group">
     <%= label f, :duration, class: "control-label" %>
-    <%= select f, :duration, [0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210], class: "form-control" %>
+    <%= datetime_select f, :duration, class: "form-control" %>
     <%= error_tag f, :duration %>
   </div>
 

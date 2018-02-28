@@ -7,7 +7,7 @@ defmodule Tasktracker.Productivity.Task do
   schema "tasks" do
     field :body, :string
     field :completed, :boolean, default: false
-    field :duration, :integer
+    field :duration, :naive_datetime
     field :title, :string
     belongs_to :author, Tasktracker.Accounts.User
     belongs_to :asignee, Tasktracker.Accounts.User
