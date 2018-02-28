@@ -44,6 +44,12 @@
   </div>
 
   <div class="form-group">
+    <%= label f, :duration_end, class: "control-label" %>
+    <%= datetime_select f, :duration_end, class: "form-control" %>
+    <%= error_tag f, :duration_end %>
+  </div>
+
+  <div class="form-group">
     <%= submit "Submit", class: "btn btn-primary" %>
   </div>
 <% end %>
