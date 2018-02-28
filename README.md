@@ -18,3 +18,11 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+PROJECT FEATURES:
+
+- users can be created and logged in + logged out
+- tasks can be created by users / managers and assigned to other users / underlings
+- managers can be created to promote users which manage other users (underlings)
+- site navigation and log in status can be found at the bottom right of any page
+- users / tasks / managers can be added, modified, and deleted and the DB will adapt properly
